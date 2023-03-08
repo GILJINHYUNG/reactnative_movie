@@ -14,6 +14,7 @@ const Tabs = () => {
 				backgroundColor: isDark ? BLACK_COLOR : "white",
 			}}
 			screenOptions={{
+				unmountOnBlur: true,
 				tabBarStyle: {
 					backgroundColor: isDark ? BLACK_COLOR : "white",
 					borderTopColor: isDark ? DARK_GREY : LIGHT_GREY,
@@ -27,7 +28,6 @@ const Tabs = () => {
 					color: isDark ? "white" : BLACK_COLOR,
 				},
 				tabBarLabelStyle: {
-					marginTop: -5,
 					fontSize: 10,
 					fontWeight: "600",
 				},
